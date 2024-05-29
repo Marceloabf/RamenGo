@@ -15,6 +15,8 @@
 #main {
     background-image: url("./assets/mainBackground.svg");
     background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
 
     min-height: 48rem;
     min-width: 85rem;
@@ -103,6 +105,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 .card img{
@@ -134,24 +137,24 @@
     margin-top: 2.25rem;
 }
 
-#meat{
+#protein{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 6rem;
 }
 
-#meat h2{
+#protein h2{
     font-size: 2rem;
     line-height: 47.52px;
     font-weight: 900;
 }
 
-#meat h2 + p{
+#protein h2 + p{
     margin-bottom: 2.93rem;
 }
 
-#meatCardsContainer{
+#proteinCardsContainer{
     width: 100%;
 
     display: flex;
@@ -161,7 +164,7 @@
     margin-bottom: 5rem;
 }
 
-#meat .card p{
+#protein .card p{
     max-width: 256px;
     text-align: center;
 }
@@ -194,4 +197,17 @@
 
 #handleIngredients a{
     text-decoration: none;
+}
+
+.activeCard{
+    background-color: var(--ramenGoBlue);
+    color: white;
+}
+
+.activeCard .ingredientsName{
+    color: white;
+}
+
+.activeCard span{
+    color: var(--ramenGoYellow);
 }
