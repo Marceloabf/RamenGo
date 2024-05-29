@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&display=swap" rel="stylesheet">
     <title>Ramen GO</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="./main.js" defer></script>
 </head>
 <body>
     <section id="main">
@@ -16,10 +16,12 @@
         <div class="mainContent">
             <img src="./assets/mainGO.svg" alt="">
             <p>Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!</p>
-            <button>
-                <a href="#handleIngredients">Order now</a>
-                <img src="./assets/buttonArrow.svg" alt="">
-            </button>
+            <a href="#handleIngredients">
+                    <button>
+                        Order now
+                        <img src="./assets/buttonArrowYellow.svg" alt="">
+                    </button>
+                </a>
         </div>
     </section>
     <section id="handleIngredients">
@@ -27,51 +29,21 @@
             <div class="cards" id="broth">
                 <h2>First things first: select your favorite broth.</h2>
                 <p>It will give the whole flavor on your ramen soup. </p>
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Salt</p>
-                    <p>Simple like the seawater, nothing more </p>
-                    <span>US$ 10</span>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Shoyu</p>
-                    <p>The good old and traditional soy sauce </p>
-                    <span>US$ 10</span>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Miso</p>
-                    <p>Paste made of fermented soybeans</p>
-                    <span>US$ 12</span>
+                <div id="brothCardsContainer">
                 </div>
             </div>
-            <div class="card" id="meat">
+            <div class="cards" id="meat">
                 <h2>It’s time to choose (or not) your meat!</h2>
                 <p>Some people love, some don’t. We have options for all tastes.</p>
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Chasu</p>
-                    <p>A sliced flavourful pork meat with a selection of season vegetables.</p>
-                    <span>US$ 10</span>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Yasai Vegetarian</p>
-                    <p>A delicious vegetarian lamen with a selection of season vegetables.</p>
-                    <span>US$ 10</span>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Karaague</p>
-                    <p>Three units of fried chicken, moyashi, ajitama egg and other vegetables.</p>
-                    <span>US$ 12</span>
+                <div id="meatCardsContainer">
                 </div>
             </div>
-            <button>
-                <p>Place my order</p>
-                <img src="" alt="">
-            </button>
+            <a href="">
+                    <button>
+                        Place my order
+                        <img src="./assets/buttonArrow.svg" alt="">
+                    </button>
+            </a>
         </div>
     </section>
 </body>
