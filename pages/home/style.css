@@ -13,7 +13,7 @@
 }
 
 #main {
-    background-image: url("./assets/mainBackground.svg");
+    background-image: url("../../assets/mainBackground.svg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;

@@ -141,8 +141,7 @@ function handleOrder() {
         return response.json();
     })
     .then(data => {
-        alert("Pedido feito com sucesso!");
-        console.log(data);
+        window.location.href = `../order/index.html?description=${data.description}&img=${data.image}`;
     })
     .catch(error => {
         console.error(error);
