@@ -154,3 +154,16 @@ document.getElementById('orderButton').addEventListener('click', handleOrder);
 getBroths();
 getProteins();
 
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const checkMobileView = () => {
+//         if (window.innerWidth <= 360) {
+//             setupMobileCarousel();
+//         } else {
+//             removeMobileCarousel();
+//         }
+//     };  
+
+
+// });
