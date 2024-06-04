@@ -1,48 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Ramen GO</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="./script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <section id="main">
-        <img id="logo" src="../../assets/logo.svg" alt="">
-        <div class="mainContent">
-            <img src="../../assets/mainGO.svg" alt="">
-            <p>Enjoy a good ramen in the comfort of your house. Create your own ramen and choose your favorite flavour combination!</p>
-            <a href="#handleIngredients">
-                    <button>
-                        Order now
-                        <img src="../../assets/buttonArrowYellow.svg" alt="">
-                    </button>
-                </a>
-        </div>
+      <img id="logo" src="../../assets/logo.svg" alt="" />
+      <div class="mainContent">
+        <img src="../../assets/mainGO.svg" alt="" />
+        <p>
+          Enjoy a good ramen in the comfort of your house. Create your own ramen
+          and choose your favorite flavour combination!
+        </p>
+        <a class="orderButton" href="#handleIngredients">
+          Order now
+          <img src="../../assets/buttonArrowYellow.svg" alt="" />
+        </a>
+      </div>
     </section>
     <section id="handleIngredients">
-        <div id="container">
-            <div class="cards" id="broth">
-                <h2>First things first: select your favorite broth.</h2>
-                <p>It will give the whole flavor on your ramen soup. </p>
-                <div id="brothCardsContainer">
-                </div>
-            </div>
-            <div class="cards" id="protein">
-                <h2>It’s time to choose (or not) your protein!</h2>
-                <p>Some people love, some don’t. We have options for all tastes.</p>
-                <div id="proteinCardsContainer">
-                </div>
-            </div>
-                    <button id="orderButton">
-                        Place my order
-                        <img src="../../assets/buttonArrow.svg" alt="">
-                    </button>
+      <div id="container">
+        <div id="broth">
+          <h2>First things first: select your favorite broth.</h2>
+          <p>It will give the whole flavor on your ramen soup.</p>
+          <div id="brothCardsContainer"></div>
+          <div class="cardControls">
+            <button
+              id="btn1"
+              class="control activeButton"
+              onclick="scrollToCard('brothCardsContainer', 0, this)"
+            ></button>
+            <button
+              id="btn2"
+              class="control"
+              onclick="scrollToCard('brothCardsContainer', 1, this)"
+            ></button>
+            <button
+              id="btn3"
+              class="control"
+              onclick="scrollToCard('brothCardsContainer', 2, this)"
+            ></button>
+          </div>
         </div>
+        <div id="protein">
+          <h2>It’s time to choose (or not) your protein!</h2>
+          <p>Some people love, some don’t. We have options for all tastes.</p>
+          <div id="proteinCardsContainer"></div>
+          <div class="cardControls">
+            <button
+              id="btn1"
+              class="control activeButton"
+              onclick="scrollToCard('proteinCardsContainer', 0, this)"
+            ></button>
+            <button
+              id="btn2"
+              class="control"
+              onclick="scrollToCard('proteinCardsContainer', 1, this)"
+            ></button>
+            <button
+              id="btn3"
+              class="control"
+              onclick="scrollToCard('proteinCardsContainer', 2, this)"
+            ></button>
+          </div>
+        </div>
+        <button id="orderButton">
+          Place my order
+          <img src="../../assets/buttonArrow.svg" alt="" />
+        </button>
+      </div>
     </section>
-</body>
+    <div id="loading" class="loading">Loading...</div>
+  </body>
 </html>
