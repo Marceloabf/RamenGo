@@ -95,7 +95,6 @@
     display: flex;
     justify-content: center;
     gap: 4rem;
-
 }
 
 .card{
@@ -178,7 +177,7 @@
     padding-bottom: 7.875rem;
 }
 
-#handleIngredients button{
+#orderButton{
     min-width: 13.31rem;
     height: 3.75rem;
     display: flex;
@@ -216,7 +215,7 @@
     color: var(--ramenGoYellow);
 }
 
-@media (max-width:360px) {
+@media (max-width:400px) {
     #main {
      min-width: 300px;
      max-width: 360px;
@@ -261,7 +260,7 @@
     #handleIngredients{
         min-width: 300px;
         max-width: 360px;
-        overflow: hidden;
+
     }
 
     #broth{
@@ -283,7 +282,7 @@
         font-weight: 400;
         line-height: 24px;
         font-size: 16px;
-        margin-bottom: 32px;
+        margin-bottom: 0px;
     }
 
     #protein{
@@ -305,7 +304,7 @@
         font-weight: 400;
         line-height: 24px;
         font-size: 16px;
-        margin-bottom: 32px;
+        margin-bottom: 0px;
     }
 
     .card{
@@ -314,4 +313,67 @@
         max-width: 288px;
         max-height: 316px;
     }
-}
+
+    .control{
+        width: 12px;
+        height: 12px;
+        background-color: #E0DBBF;
+        border-radius: 8px;
+        border: none;
+        transition: width 0.3s ease, background-color 0.3s ease;
+    }
+
+    #brothCardsContainer{
+        max-width: 360px;
+        justify-content: start;
+        gap: 1rem;
+
+        overflow-x: hidden;
+
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #brothCardsContainer div:first-of-type{
+       margin-left: 1.4rem;
+    }
+
+    #brothCardsContainer .card:last-child {
+        margin-right: 1.4rem;
+    }
+
+    .activeButton{
+        background-color: salmon;
+        width: 36px;
+    }
+
+    #proteinCardsContainer{
+        max-width: 360px;
+        justify-content: start;
+        gap: 1rem;
+        overflow-x: hidden;
+        margin-bottom: 0px;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #proteinCardsContainer div:first-of-type{
+        margin-left: 1.4rem;
+    }
+
+     #proteinCardsContainer .card:last-child {
+         margin-right: 1.4rem;
+     }
+
+    #orderButton{
+        margin-top: 3rem;
+    }
+
+    #container{
+        padding-bottom: 32px;
+    }
+
+    #handleIngredients{
+        overflow-x: hidden;
+    }
+}   
