@@ -294,9 +294,11 @@
     .mainContent img:first-of-type {
         display: none;
     }
-    .mainContent a{
+
+    .mainContent .orderButton{
         display: none;
     }
+    
     .mainContent p{
         width: 300px;
         font-weight: 500;
