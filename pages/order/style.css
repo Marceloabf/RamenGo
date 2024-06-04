@@ -123,3 +123,51 @@
     max-height: 16px;
 }
 
+@media (max-width: 1000px) {
+    .container{
+        max-width: 100vw;
+        flex-direction: column;
+    }
+
+    #logo{
+        margin: 0;
+    }
+
+    #orderDescription{
+        align-items: center;
+        padding: 20px;
+        min-height: 100vh;
+    }
+    #orderDetails{
+        height: 100%;
+    }
+    #orderDescription #orderName{
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .messageContainer{
+        text-align: center;
+        justify-content: start;
+        height: 50vh;
+    }
+    .messageContainer > img:nth-of-type(2){
+        min-width: 328px;
+        min-height: 26px;
+    }
+
+    .messageContainer img + p{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+        max-width: 325px;
+    }
+
+    .messageContainer p + p{
+        margin-bottom: 24px;
+    }
+    #orderButton{
+        min-width: 235px;
+    }
+}
