@@ -125,6 +125,9 @@ function handleOrder() {
     proteinId: proteinId,
   };
 
+  const loadingIndicator = document.getElementById("loading");
+  loadingIndicator.style.display = "block"; 
+
   fetch(orderUrl, {
     method: "POST",
     headers: headers,
@@ -137,10 +140,12 @@ function handleOrder() {
       return response.json();
     })
     .then((data) => {
+      loadingIndicator.style.display = "none"; 
       window.location.href = `../order/index.html?description=${data.description}&img=${data.image}`;
     })
     .catch((error) => {
       console.error(error);
+      loadingIndicator.style.display = "none"; 
       alert("Erro ao fazer o pedido. Por favor, tente novamente.");
     });
 }
